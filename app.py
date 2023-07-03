@@ -26,6 +26,8 @@ def read_params(config_path):
 
 
 
+
+
 def predict(data):
     config = read_params(params_path)
     model_dir_path = config["model_webapp_dir"]
