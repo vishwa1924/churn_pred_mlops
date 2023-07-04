@@ -3,7 +3,7 @@ import os
 import numpy as np
 import yaml
 import joblib 
-
+# application
 webapp_root = "webapp"
 params_path = "params.yaml"
 
@@ -69,7 +69,6 @@ def index():
             return render_template("404.html", error=error)
     else:
         return render_template("index.html")
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
